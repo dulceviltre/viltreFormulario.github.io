@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="discunt">
+            <p>20% de descuento en todos los productos!</p>
+        </div>
+        <div class="background">
+            <img src="img/LogoRegistro.png" alt="logo">
+            <h2>Nombre Tienda</h2>
+        </div>
+        <div class="ingreso">
+            <a href="#" target="_blank">Ingresar</a>
+            <a href="#" target="_blank">Registrarme</a>
+            <a href="#" target="_blank">Contacto</a>
+        </div>
+    </header>
+    <main>
+        <div class="formulario">
+            <h1>Añadí tu super!</h1>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+            <form action="registro" method="post">
+                <div class="formulario1">
+                    <div class="datos">
+                        <label for="nombre"> *Nombre <input type="text" name="nombre" id="nombre" required></label>
+                        <label for="fechaNacimiento"> Fecha <input type="date" name="fechaNacimiento" id="fechaNacimiento" required value="aaaa/mm/dd" min="1900/01/01" max="2050/01/01"></label>
+                        <label for="descipcion"> <textarea name="descipcion" id="descipcion" cols="30" rows="10" placeholder="Descripcion"></textarea>
+                    </div>
+                    <div>
+                        <p>*Especie</p>
+                        <select name="especie" id="especie">
+                        <optgroup label="Especie">
+                        <option value="1">Perro</option>
+                        <option value="2">Gato</option>
+                        <option value="3">Gallina</option>
+                        <option value="4">Palona</option>
+                        <option value="5">Gicotea</option>
+                        </optgroup>
+                        </select>
+                        <br>
+                        <label for="adjunto">
+                            <input type="file" id="adjunto" name="adjunto" multiple accept="pdf,jpg" >
+                        </label>
+                        <br>
+                        <p>Poderes</p>
+                        <input type="checkbox" name="poderes" id="poderes" value="js"><label for="Poderes"> Volar </label>
+                        <input type="checkbox" name="poderes" id="poderes" value="js"><label for="Poderes"> Superinteligencia </label>
+                        <input type="checkbox" name="poderes" id="poderes" value="js"><label for="Poderes"> Vista de rayo Láser </label>
+                        <input type="checkbox" name="poderes" id="poderes" value="js"><label for="Poderes"> Billetera gorda </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
